@@ -945,6 +945,269 @@
       opacity: 1;
       transform: none;
     }
+
+    /* ----------------------------------
+     * Character Section (Cast & Now)
+     * ---------------------------------- */
+    .characters {
+      background-color: rgba(18, 24, 36, 0.4);
+      position: relative;
+    }
+
+    .character-banner {
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      aspect-ratio: 16 / 9;
+      background-color: #0c1017;
+    }
+
+    .character-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .character-banner:hover img {
+      transform: scale(1.02);
+    }
+
+    .character-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .character-card {
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .character-card:hover {
+      transform: translateY(-2px);
+      background-color: var(--color-bg-card-hover);
+    }
+
+    .character-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+    }
+
+    .character-card.cast::before {
+      background-color: #F97316; /* Castのオレンジ */
+    }
+
+    .character-card.now::before {
+      background-color: #8B5CF6; /* Nowのパープル */
+    }
+
+    .character-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 12px;
+    }
+
+    .character-name-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .character-icon {
+      font-size: 1.6rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cast .character-icon {
+      background-color: rgba(249, 115, 22, 0.1);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+    }
+
+    .now .character-icon {
+      background-color: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+
+    .character-name {
+      font-size: 1.4rem;
+      font-weight: 900;
+    }
+
+    .cast .character-name {
+      color: #F97316;
+    }
+
+    .now .character-name {
+      color: #A855F7;
+    }
+
+    .character-role {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+    }
+
+    .cast .character-role {
+      background-color: rgba(249, 115, 22, 0.1);
+      color: #F97316;
+      border: 1px solid rgba(249, 115, 22, 0.2);
+    }
+
+    .now .character-role {
+      background-color: rgba(139, 92, 246, 0.1);
+      color: #A855F7;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+    }
+
+    .character-profile {
+      font-size: 0.92rem;
+      color: var(--color-text-sub);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .character-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      font-size: 0.88rem;
+    }
+
+    .character-detail-item {
+      background-color: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+
+    .character-detail-label {
+      font-weight: 900;
+      color: var(--color-text-main);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .character-detail-content {
+      color: var(--color-text-sub);
+      line-height: 1.5;
+    }
+
+    /* 漫才掛け合いUI */
+    .character-skit {
+      background-color: #0c1017;
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .character-skit-title {
+      font-size: 0.95rem;
+      font-weight: 900;
+      color: var(--color-accent);
+      text-align: center;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .character-skit-chat {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .skit-line {
+      display: flex;
+      gap: 10px;
+      max-width: 90%;
+    }
+
+    .skit-line.cast {
+      align-self: flex-start;
+    }
+
+    .skit-line.now {
+      align-self: flex-end;
+      flex-direction: row-reverse;
+    }
+
+    .skit-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .skit-line.cast .skit-avatar {
+      background: rgba(249, 115, 22, 0.1);
+      border-color: rgba(249, 115, 22, 0.3);
+    }
+
+    .skit-line.now .skit-avatar {
+      background: rgba(139, 92, 246, 0.1);
+      border-color: rgba(139, 92, 246, 0.3);
+    }
+
+    .skit-content {
+      background: var(--color-bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 4px 12px 12px 12px;
+      padding: 8px 12px;
+      font-size: 0.85rem;
+      color: var(--color-text-main);
+      line-height: 1.4;
+    }
+
+    .skit-line.now .skit-content {
+      border-radius: 12px 4px 12px 12px;
+    }
+
+    .skit-speaker {
+      font-size: 0.72rem;
+      color: var(--color-text-sub);
+      margin-bottom: 2px;
+      font-weight: 700;
+    }
+
+    .skit-line.now .skit-speaker {
+      text-align: right;
+    }
   </style>
 </head>
 <body>
@@ -1151,6 +1414,110 @@
         </div>
 
       </div>
+    </section>
+
+    <!-- キャラクター紹介 -->
+    <section class="characters fade-in-section" id="characters">
+      <h2 class="section-title">あなたの創作を支える最強のバディ <span>Cast & Now</span></h2>
+      <p class="section-subtitle">
+        2090年の未来世界からやってきた、クリエイターを支援するCreator Support Unit。<br>
+        前衛の「Cast」と後方支援の「Now」が、あなたの相棒として動画作成をサポート！
+      </p>
+
+      <!-- キャラクター集合ビジュアル -->
+      <div class="character-banner">
+        <img src="./castnow_chars.webp" alt="Cast & Now キャラクタービジュアル">
+      </div>
+
+      <div class="character-cards">
+        
+        <!-- Cast -->
+        <div class="character-card cast">
+          <div class="character-header">
+            <div class="character-name-wrap">
+              <span class="character-icon">🎬</span>
+              <h3 class="character-name">Cast（キャスト）</h3>
+            </div>
+            <span class="character-role">型番: Cast-29</span>
+          </div>
+          <p class="character-profile">
+            元気いっぱいで行動派、ちょっと熱血な男の子ロボット。せっかちですぐに投稿したがる。動画制作や音声のMP4書き出し、SNSへの自動投稿などの前衛・実務作業を担当する。
+          </p>
+          <div class="character-detail-grid">
+            <div class="character-detail-item">
+              <div class="character-detail-label">💬 代表的な口癖</div>
+              <div class="character-detail-content">「よーし、動画作っちゃおう！」「投稿まで行くぜ！」「あとは俺に任せろ！」</div>
+            </div>
+            <div class="character-detail-item">
+              <div class="character-detail-label">🌟 固有必殺技：「Cast Burst（キャスト・バースト）」</div>
+              <div class="character-detail-content">「完成したらすぐ投稿だ！」動画生成処理を極限まで高速化します。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Now -->
+        <div class="character-card now">
+          <div class="character-header">
+            <div class="character-name-wrap">
+              <span class="character-icon">💜</span>
+              <h3 class="character-name">Now（ナウ）</h3>
+            </div>
+            <span class="character-role">型番: Now-30</span>
+          </div>
+          <p class="character-profile">
+            落ち着いていて優しく、少し天然が入っている女の子ロボット。何事も慎重で確認を怠らない。AIでの台本生成や、各種設定補助、トラブルシューティングなど後方支援を担当する。
+          </p>
+          <div class="character-detail-grid">
+            <div class="character-detail-item">
+              <div class="character-detail-label">💬 代表的な口癖</div>
+              <div class="character-detail-content">「大丈夫ですよ♪」「今すぐできますよ」「手抜きじゃなくて、手間抜きです♪」</div>
+            </div>
+            <div class="character-detail-item">
+              <div class="character-detail-label">🌟 固有必殺技：「Now Support（ナウ・サポート）」</div>
+              <div class="character-detail-content">「今すぐできますよ♪」面倒な台本生成やナレーション音声の設定を賢く補助します。</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- コミカル掛け合い劇場（漫才コンビ感） -->
+      <div class="character-skit">
+        <div class="character-skit-title">
+          <span>🤖</span> Creator Support Unit 29 & 30号の日常
+        </div>
+        <div class="character-skit-chat">
+          <div class="skit-line cast">
+            <span class="skit-avatar">🎬</span>
+            <div>
+              <div class="skit-speaker">Cast</div>
+              <div class="skit-content">「よーし！動画ができたから、今すぐ投稿するぜ！！」</div>
+            </div>
+          </div>
+          <div class="skit-line now">
+            <span class="skit-avatar">💜</span>
+            <div>
+              <div class="skit-speaker">Now</div>
+              <div class="skit-content">「ちょっとCast、せっかちすぎです！サムネイル確認してください♪」</div>
+            </div>
+          </div>
+          <div class="skit-line cast">
+            <span class="skit-avatar">🎬</span>
+            <div>
+              <div class="skit-speaker">Cast</div>
+              <div class="skit-content">「おっとそうだった！でも、サムネイル作成も合体技『CastNow』ですぐ完了だな！」</div>
+            </div>
+          </div>
+          <div class="skit-line now">
+            <span class="skit-avatar">💜</span>
+            <div>
+              <div class="skit-speaker">Now</div>
+              <div class="skit-content">「はい♪ 手抜きじゃなくて、手間抜きですからね♪」</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- こんな人におすすめ -->
