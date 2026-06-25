@@ -14,8 +14,8 @@ Buzzter (バズター) is an all-in-one video creation platform designed for You
 - **Video Merger**: Merges multiple video clips instantly in the browser.
 
 ## Characters & Supporters (Creator Support Units)
-- **バズタカ (Buzz-taka)**: Energetic and passionate boy robot who loves virality. Script specialist. Catchphrase: "Did it go viral?" (バズったか？)
-- **バズミ (Buzz-mi)**: Calm, silent, and numbers-driven girl robot who loves data. Thumbnail specialist. Communicates by showing tablet.
+- **バズたか (Buzz-taka)**: Energetic and passionate boy robot who loves virality. Script specialist. Catchphrase: "Did it go viral?" (バズったか？)
+- **バズ美 (Buzz-mi)**: Calm, silent, and numbers-driven girl robot who loves data. Thumbnail specialist. Communicates by showing tablet.
 
 ## Branding History
 In June 2026, CastNow was renamed to Buzzter due to trademark issues. Features, pricing, and system operations remain identical.
