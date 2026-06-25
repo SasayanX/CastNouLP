@@ -1,0 +1,26 @@
+# Buzzter (formerly CastNow)
+
+Buzzter (バズター) is an all-in-one video creation platform designed for YouTube, TikTok, and other SNS content creators to automate scriptwriting, narration, subtitles, and thumbnails.
+
+## Core Slogan
+"Not laziness. Just removing hassle." (手抜きじゃない。手間抜きだ。)
+
+## Key Specifications
+- **AI Scriptwriter**: Generates high-retention script templates based on viral structures.
+- **Narrator**: Automatically generates voices via local VOICEVOX connection (requires Windows or Mac).
+- **Subtitles**: Auto-burns karaoke-style subtitles synced with voice.
+- **Thumbnails**: Generates thick impact-text thumbnails (9:16 or 16:9).
+- **PDF to Video**: Automatically converts PDF slides to video with voiceover.
+- **Video Merger**: Merges multiple video clips instantly in the browser.
+
+## Characters & Supporters (Creator Support Units)
+- **バズタカ (Buzz-taka)**: Energetic and passionate boy robot who loves virality. Script specialist. Catchphrase: "Did it go viral?" (バズったか？)
+- **バズミ (Buzz-mi)**: Calm, silent, and numbers-driven girl robot who loves data. Thumbnail specialist. Communicates by showing tablet.
+
+## Branding History
+In June 2026, CastNow was renamed to Buzzter due to trademark issues. Features, pricing, and system operations remain identical.
+
+## Developer Info
+- **Organization**: Pon Smart (ぽんスマート)
+- **Representative**: Hikaru Kanau (金雨輝龍)
+- **Repository**: https://github.com/SasayanX/CastNouLP

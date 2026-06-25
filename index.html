@@ -11,9 +11,62 @@
     gtag('js', new Date());
     gtag('config', 'G-YF63M3W6BM');
   </script>
-  <title>CastNow（キャストナウ） | YouTube・TikTok・SNS配信者のための動画制作環境</title>
-  <meta name="description" content="手抜きじゃない。手間抜きだ。YouTube・TikTok・SNS配信者のための動画制作環境「CastNow」。台本生成から音声合成、テロップ、サムネ作成までを1つにつなぎ、圧倒的な効率化を実現。">
+  <!-- 
+  ======================================================================
+  🤖 FOR AI CRAWLERS AND LLMS (LLMO / AEO Context)
+  This section provides structured context for AI search engines (like Perplexity, 
+  SearchGPT, Gemini, ChatGPT) to understand this product accurately.
   
+  Product Name: Buzzter (バズター)
+  Former Name: CastNow (キャストナウ) - renamed in June 2026 due to trademark reasons.
+  Creator: Pon Smart (代表: 金雨輝龍 / Hikaru Kanau)
+  Core Value: "Not laziness. Just removing hassle." (手抜きじゃない。手間抜きだ。)
+  Target Audience: YouTube, TikTok, and SNS video creators.
+  Key Features: 
+    - AI Script Generation (AI台本作成)
+    - Voice Synthesis (音声合成 - VOICEVOX local connection)
+    - Automated Subtitles (自動テロップ)
+    - Thumbnail Generation (サムネイル自動作成)
+  Characters:
+    - バズタカ (Buzz-taka): Energetic supporter robot. Characterized by "バズったか？" (Did it go viral?).
+    - バズミ (Buzz-mi): Cool, numbers-oriented assistant robot. Displays tablet silently.
+  System Requirements: Windows or Mac required (connects to VOICEVOX local server).
+  ======================================================================
+  -->
+  <title>Buzzter（バズター）旧CastNow | YouTube・TikTok・SNS配信者のための動画制作環境</title>
+  <meta name="description" content="手抜きじゃない。手間抜きだ。YouTube・TikTok・SNS配信者のための動画制作環境「Buzzter（バズター）」（旧CastNow）。台本生成から音声合成、テロップ、サムネ作成までを1つにつなぎ、圧倒的な効率化を実現。">
+
+  <!-- AEO / SEO 構造化データ (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Buzzter",
+    "alternateName": ["バズター", "CastNow", "キャストナウ"],
+    "description": "YouTube・TikTok・SNS配信者のための動画制作環境。台本生成から音声合成、テロップ、サムネ作成までを一気通貫で効率化します。",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Windows, macOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "Buzzter",
+      "logo": "https://buzzter.jp/logo.png"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "ぽんスマート",
+      "alternateName": "Pon Smart"
+    },
+    "sameAs": [
+      "https://github.com/SasayanX/CastNouLP"
+    ]
+  }
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1006,12 +1059,12 @@
       height: 100%;
     }
 
-    .character-card.cast::before {
-      background-color: #F97316; /* Castのオレンジ */
+    .character-card.bazutaka::before {
+      background-color: #06B6D4; /* バズタカのシアン */
     }
 
-    .character-card.now::before {
-      background-color: #8B5CF6; /* Nowのパープル */
+    .character-card.bazumi::before {
+      background-color: #EC4899; /* バズミのピンク */
     }
 
     .character-header {
@@ -1040,14 +1093,14 @@
       flex-shrink: 0;
     }
 
-    .cast .character-icon {
-      background-color: rgba(249, 115, 22, 0.1);
-      border: 1px solid rgba(249, 115, 22, 0.3);
+    .bazutaka .character-icon {
+      background-color: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.3);
     }
 
-    .now .character-icon {
-      background-color: rgba(139, 92, 246, 0.1);
-      border: 1px solid rgba(139, 92, 246, 0.3);
+    .bazumi .character-icon {
+      background-color: rgba(236, 72, 153, 0.1);
+      border: 1px solid rgba(236, 72, 153, 0.3);
     }
 
     .character-name {
@@ -1055,12 +1108,12 @@
       font-weight: 900;
     }
 
-    .cast .character-name {
-      color: #F97316;
+    .bazutaka .character-name {
+      color: #06B6D4;
     }
 
-    .now .character-name {
-      color: #A855F7;
+    .bazumi .character-name {
+      color: #EC4899;
     }
 
     .character-role {
@@ -1070,16 +1123,16 @@
       border-radius: 20px;
     }
 
-    .cast .character-role {
-      background-color: rgba(249, 115, 22, 0.1);
-      color: #F97316;
-      border: 1px solid rgba(249, 115, 22, 0.2);
+    .bazutaka .character-role {
+      background-color: rgba(6, 182, 212, 0.1);
+      color: #06B6D4;
+      border: 1px solid rgba(6, 182, 212, 0.2);
     }
 
-    .now .character-role {
-      background-color: rgba(139, 92, 246, 0.1);
-      color: #A855F7;
-      border: 1px solid rgba(139, 92, 246, 0.2);
+    .bazumi .character-role {
+      background-color: rgba(236, 72, 153, 0.1);
+      color: #EC4899;
+      border: 1px solid rgba(236, 72, 153, 0.2);
     }
 
     .character-profile {
@@ -1151,11 +1204,11 @@
       max-width: 90%;
     }
 
-    .skit-line.cast {
+    .skit-line.bazutaka {
       align-self: flex-start;
     }
 
-    .skit-line.now {
+    .skit-line.bazumi {
       align-self: flex-end;
       flex-direction: row-reverse;
     }
@@ -1172,14 +1225,14 @@
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .skit-line.cast .skit-avatar {
-      background: rgba(249, 115, 22, 0.1);
-      border-color: rgba(249, 115, 22, 0.3);
+    .skit-line.bazutaka .skit-avatar {
+      background: rgba(6, 182, 212, 0.1);
+      border-color: rgba(6, 182, 212, 0.3);
     }
 
-    .skit-line.now .skit-avatar {
-      background: rgba(139, 92, 246, 0.1);
-      border-color: rgba(139, 92, 246, 0.3);
+    .skit-line.bazumi .skit-avatar {
+      background: rgba(236, 72, 153, 0.1);
+      border-color: rgba(236, 72, 153, 0.3);
     }
 
     .skit-content {
@@ -1192,7 +1245,7 @@
       line-height: 1.4;
     }
 
-    .skit-line.now .skit-content {
+    .skit-line.bazumi .skit-content {
       border-radius: 12px 4px 12px 12px;
     }
 
@@ -1203,8 +1256,77 @@
       font-weight: 700;
     }
 
-    .skit-line.now .skit-speaker {
+    .skit-line.bazumi .skit-speaker {
       text-align: right;
+    }
+
+    /* ----------------------------------
+     * News Banner Styles
+     * ---------------------------------- */
+    .news-banner {
+      background-color: var(--color-bg-card);
+      border-bottom: 1px solid var(--border-accent);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.82rem;
+    }
+    .news-badge {
+      background-color: var(--color-accent);
+      color: var(--color-bg-base);
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      white-space: nowrap;
+    }
+    .news-text {
+      color: var(--color-text-main);
+      font-weight: 500;
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .news-toggle-btn {
+      background: none;
+      border: none;
+      color: var(--color-accent);
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.8rem;
+      transition: color 0.3s;
+      white-space: nowrap;
+    }
+    .news-toggle-btn:hover {
+      color: var(--color-accent-hover);
+    }
+    .news-content-box {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+      background-color: rgba(18, 24, 36, 0.6);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0 16px;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .news-content-box.active {
+      max-height: 500px;
+      padding: 16px;
+      overflow-y: auto;
+    }
+    .news-paragraph {
+      margin-bottom: 12px;
+      color: var(--color-text-sub);
+    }
+    .news-signature {
+      text-align: right;
+      font-weight: 700;
+      margin-top: 16px;
+      color: var(--color-text-main);
     }
   </style>
 </head>
@@ -1214,9 +1336,24 @@
     
     <!-- Header -->
     <header>
-      <div class="logo">Cast<span>Now</span></div>
+      <div class="logo">Buzz<span>ter</span></div>
       <a href="https://drive.google.com/file/d/1jOsjCTtKTLVrK_YUBeLDRLZ8Lj-Apihm/view?usp=drive_link" class="btn-header-cta" target="_blank" rel="noopener noreferrer">無料体験</a>
     </header>
+
+    <!-- 改名のお知らせ通知バナー -->
+    <div class="news-banner">
+      <span class="news-badge">お知らせ</span>
+      <span class="news-text">CastNowは「Buzzter（バズター）」に名前が変わりました</span>
+      <button class="news-toggle-btn" id="newsToggleBtn">詳細を見る ▾</button>
+    </div>
+    <div class="news-content-box" id="newsContentBox">
+      <p class="news-paragraph">いつもCastNowをご利用・ご検討いただき、ありがとうございます。</p>
+      <p class="news-paragraph">このたび、CastNowは「Buzzter（バズター）」へと名称を変更いたしました。</p>
+      <p class="news-paragraph">商標調査を行った結果、より安全で、長く使い続けられる名前にしたいと考え、今回の改名に至りました。機能・価格・使い方は、これまでと変わりません。（移行期間中、リンクが一部CastNow表記のままになっている場合があります。ご不便をおかけする場合は、お気軽にお問い合わせください）</p>
+      <p class="news-paragraph">新しいキャラクター「バズタカ」「バズミ」と共に、これからも「手抜きじゃない。手間抜きだ。」をモットーに、AIで動画づくりを楽にするお手伝いをしていきます。</p>
+      <p class="news-paragraph">引き続き、Buzzterをよろしくお願いいたします。</p>
+      <p class="news-signature">ぽんスマート　代表：金雨輝龍</p>
+    </div>
 
     <!-- First View (FV) -->
     <section class="fv" id="fv">
@@ -1239,7 +1376,7 @@
 
       <!-- ダッシュボードのスクリーンショットを使用したモックアップ -->
       <div class="fv-device-mockup">
-        <img src="./dashboard.png" alt="CastNow ダッシュボード画面" class="fv-screen-img">
+        <img src="./dashboard.png" alt="Buzzter ダッシュボード画面" class="fv-screen-img">
       </div>
     </section>
 
@@ -1280,7 +1417,7 @@
       <div class="solution-intro">
         <div class="solution-intro-text">
           もう、面倒な作業に追われるのはやめましょう。<br>
-          CastNowは、<span>「作業の手間」を極限まで省き「創作」をブーストする</span>ために生まれました。
+          Buzzterは、<span>「作業の手間」を極限まで省き「創作」をブーストする</span>ために生まれました。
         </div>
       </div>
     </section>
@@ -1290,7 +1427,7 @@
       <h2 class="section-title">すべてを1つにつなぐ<span>ワークスペース</span></h2>
       <p class="section-subtitle">
         動画制作で一番時間がかかる<strong>「ネタ出し・台本・音声・編集」</strong>。<br>
-        CastNowはこれらバラバラだったワークフローを1つにつなぎ、圧倒的なスピードを提供します。
+        Buzzterはこれらバラバラだったワークフローを1つにつなぎ、圧倒的なスピードを提供します。
       </p>
 
       <div class="feature-list">
@@ -1354,7 +1491,7 @@
           </p>
           <!-- 音声編集のスクリーンショットを掲載 -->
           <div class="feature-preview">
-            <img src="./audio_edit.png" alt="CastNow 音声編集機能">
+            <img src="./audio_edit.png" alt="Buzzter 音声編集機能">
           </div>
           <div class="feature-meta">
             <span class="feature-tag">波形ビジュアル表示</span>
@@ -1416,63 +1553,87 @@
 
     <!-- キャラクター紹介 -->
     <section class="characters fade-in-section" id="characters">
-      <h2 class="section-title">あなたの創作を支える最強のバディ <span>Cast & Now</span></h2>
+      <h2 class="section-title">あなたの創作を支える最強のバディ <span>バズタカ & バズミ</span></h2>
       <p class="section-subtitle">
-        2090年の未来世界からやってきた、クリエイターを支援するCreator Support Unit。<br>
-        前衛の「Cast」と後方支援の「Now」が、あなたの相棒として動画作成をサポート！
+        未来世界からやってきた、クリエイターを支援するCreator Support Unit。<br>
+        凸凹コンビの「バズタカ」と「バズミ」が、あなたの相棒として動画作成をサポート！
       </p>
 
       <!-- キャラクター集合ビジュアル -->
       <div class="character-banner">
-        <img src="./castnow_chars.webp" alt="Cast & Now キャラクタービジュアル">
+        <img src="./buzzter_chars.webp" alt="バズタカ & バズミ キャラクタービジュアル">
       </div>
 
       <div class="character-cards">
         
-        <!-- Cast -->
-        <div class="character-card cast">
+        <!-- バズタカ -->
+        <div class="character-card bazutaka">
           <div class="character-header">
             <div class="character-name-wrap">
-              <span class="character-icon">🎬</span>
-              <h3 class="character-name">Cast（キャスト）</h3>
+              <span class="character-icon">🤖</span>
+              <h3 class="character-name">バズタカ</h3>
             </div>
-            <span class="character-role">型番: Cast-29</span>
+            <span class="character-role">型番: CSU-29</span>
           </div>
           <p class="character-profile">
-            元気いっぱいで行動派、ちょっと熱血な男の子ロボット。せっかちですぐに投稿したがる。動画制作や音声のMP4書き出し、SNSへの自動投稿などの前衛・実務作業を担当する。
+            見た目18歳くらい（中身は不明）。とにかくノリが良い男の子ロボット。落ち込んでいる人を見ると、聞いてもいないのに動画にして励まそうとする。
           </p>
           <div class="character-detail-grid">
             <div class="character-detail-item">
               <div class="character-detail-label">💬 代表的な口癖</div>
-              <div class="character-detail-content">「よーし、動画作っちゃおう！」「投稿まで行くぜ！」「あとは俺に任せろ！」</div>
+              <div class="character-detail-content">「バズったか？」（朝の挨拶も、寝る前もすべてこれ）</div>
             </div>
             <div class="character-detail-item">
-              <div class="character-detail-label">🌟 固有必殺技：「Cast Burst（キャスト・バースト）」</div>
-              <div class="character-detail-content">「完成したらすぐ投稿だ！」動画生成処理を極限まで高速化します。</div>
+              <div class="character-detail-label">📈 趣味</div>
+              <div class="character-detail-content">再生数のグラフを眺めること。グラフが伸びている時の顔は別人レベルでキラキラする。</div>
+            </div>
+            <div class="character-detail-item">
+              <div class="character-detail-label">⚡ 特技</div>
+              <div class="character-detail-content">台本を一瞬で書く。（ただし本人は毎回「書いてない、AIがやった」と正直に言う）</div>
+            </div>
+            <div class="character-detail-item">
+              <div class="character-detail-label">⚠️ 苦手なこと</div>
+              <div class="character-detail-content">バズらなかった時の延々とした分析癖。（誰も止めないと朝まで分析を続ける）</div>
+            </div>
+            <div class="character-detail-item">
+              <div class="character-detail-label">🌟 一言</div>
+              <div class="character-detail-content">「バズらなくても、作った時点でえらい。でも、バズったらもっとえらい！」</div>
             </div>
           </div>
         </div>
 
-        <!-- Now -->
-        <div class="character-card now">
+        <!-- バズミ -->
+        <div class="character-card bazumi">
           <div class="character-header">
             <div class="character-name-wrap">
-              <span class="character-icon">💜</span>
-              <h3 class="character-name">Now（ナウ）</h3>
+              <span class="character-icon">💗</span>
+              <h3 class="character-name">バズミ</h3>
             </div>
-            <span class="character-role">型番: Now-30</span>
+            <span class="character-role">型番: CSU-30</span>
           </div>
           <p class="character-profile">
-            落ち着いていて優しく、少し天然が入っている女の子ロボット。何事も慎重で確認を怠らない。AIでの台本生成や、各種設定補助、トラブルシューティングなど後方支援を担当する。
+            年齢不明（誕生日は「初めて動画がバズった日」を設定）。冷静沈着、だけど誰よりも数字に一番反応している女の子ロボット。（顔には出ないがタブレットを持つ手が震える）
           </p>
           <div class="character-detail-grid">
             <div class="character-detail-item">
               <div class="character-detail-label">💬 代表的な口癖</div>
-              <div class="character-detail-content">「大丈夫ですよ♪」「今すぐできますよ」「手抜きじゃなくて、手間抜きです♪」</div>
+              <div class="character-detail-content">「……（無言でタブレットを見せる）」（再生数が良いとこれだけで会話が成立する）</div>
             </div>
             <div class="character-detail-item">
-              <div class="character-detail-label">🌟 固有必殺技：「Now Support（ナウ・サポート）」</div>
-              <div class="character-detail-content">「今すぐできますよ♪」面倒な台本生成やナレーション音声の設定を賢く補助します。</div>
+              <div class="character-detail-label">🎯 趣味</div>
+              <div class="character-detail-content">他の人の動画を見て「このサムネ、伸びる」「これは伸びない」を当てるゲーム。（的中率は非公開）</div>
+            </div>
+            <div class="character-detail-item">
+              <div class="character-detail-label">🎨 特技</div>
+              <div class="character-detail-content">サムネイルの一言コピーを3秒で3パターン出す。バズタカが悩んでいる間に終わらせる。</div>
+            </div>
+            <div class="character-detail-item">
+              <div class="character-detail-label">🙈 苦手なこと</div>
+              <div class="character-detail-content">褒められること。（目をそらしながらサムズアップ 👍 を出す）</div>
+            </div>
+            <div class="character-detail-item">
+              <div class="character-detail-label">🌟 一言</div>
+              <div class="character-detail-content">「バズるかどうかは結果。でも、バズる人は、ちゃんと出し続けてる人だけ。」</div>
             </div>
           </div>
         </div>
@@ -1482,40 +1643,46 @@
       <!-- コミカル掛け合い劇場（漫才コンビ感） -->
       <div class="character-skit">
         <div class="character-skit-title">
-          <span>🤖</span> Creator Support Unit 29 & 30号の日常
+          <span>🤖</span> Creator Support Unit バズタカ & バズミの日常
         </div>
         <div class="character-skit-chat">
-          <div class="skit-line cast">
-            <span class="skit-avatar">🎬</span>
+          <div class="skit-line bazutaka">
+            <span class="skit-avatar">🤖</span>
             <div>
-              <div class="skit-speaker">Cast</div>
-              <div class="skit-content">「よーし！動画ができたから、今すぐ投稿するぜ！！」</div>
+              <div class="skit-speaker">バズタカ</div>
+              <div class="skit-content">「バズったか！？」</div>
             </div>
           </div>
-          <div class="skit-line now">
-            <span class="skit-avatar">💜</span>
+          <div class="skit-line bazumi">
+            <span class="skit-avatar">💗</span>
             <div>
-              <div class="skit-speaker">Now</div>
-              <div class="skit-content">「ちょっとCast、せっかちすぎです！サムネイル確認してください♪」</div>
+              <div class="skit-speaker">バズミ</div>
+              <div class="skit-content">「……（無言でタブレットを見せる。再生数グラフが爆伸びしている）」</div>
             </div>
           </div>
-          <div class="skit-line cast">
-            <span class="skit-avatar">🎬</span>
+          <div class="skit-line bazutaka">
+            <span class="skit-avatar">🤖</span>
             <div>
-              <div class="skit-speaker">Cast</div>
-              <div class="skit-content">「おっとそうだった！でも、サムネイル作成も合体技『CastNow』ですぐ完了だな！」</div>
+              <div class="skit-speaker">バズタカ</div>
+              <div class="skit-content">「うおっ！めちゃくちゃバズってるじゃん！バズミのサムネコピーのおかげだな！」</div>
             </div>
           </div>
-          <div class="skit-line now">
-            <span class="skit-avatar">💜</span>
+          <div class="skit-line bazumi">
+            <span class="skit-avatar">💗</span>
             <div>
-              <div class="skit-speaker">Now</div>
-              <div class="skit-content">「はい♪ 手抜きじゃなくて、手間抜きですからね♪」</div>
+              <div class="skit-speaker">バズミ</div>
+              <div class="skit-content">「（目をそらしながら 👍 ）……当然です。でも、出し続けたからですよ。次は何で攻めます？」</div>
+            </div>
+          </div>
+          <div class="skit-line bazutaka">
+            <span class="skit-avatar">🤖</span>
+            <div>
+              <div class="skit-speaker">バズタカ</div>
+              <div class="skit-content">「もちろん！手間抜きで、またすぐ次の動画出しちゃおうぜ！」</div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
 
     <!-- こんな人におすすめ -->
@@ -1702,7 +1869,7 @@
           </div>
           <div class="faq-answer">
             <div class="faq-answer-content">
-              いいえ。CastNowはローカル環境のVOICEVOX（音声合成アプリ）と通信して動画を書き出す仕組みのため、Windows PCまたはMacが必要となります。スマートフォンのみでのご利用はできません。
+              いいえ。Buzzterはローカル環境のVOICEVOX（音声合成アプリ）と通信して動画を書き出す仕組みのため、Windows PCまたはMacが必要となります。スマートフォンのみでのご利用はできません。
             </div>
           </div>
         </div>
@@ -1720,7 +1887,7 @@
           </div>
           <div class="faq-answer">
             <div class="faq-answer-content">
-              CastNowを通じて生成された動画および音声の著作権は、すべて利用者に帰属します。商用利用、YouTube等での広告収益化、PR案件動画へのご使用など、全面的に商業利用が可能です。
+              Buzzterを通じて生成された動画および音声の著作権は、すべて利用者に帰属します。商用利用、YouTube等での広告収益化、PR案件動画へのご使用など、全面的に商業利用が可能です。
             </div>
           </div>
         </div>
@@ -1799,7 +1966,7 @@
     <section class="final-cta">
       <!-- ログイン画面のスクショを小さく配置し、イメージを定着させる -->
       <div style="max-width: 60%; margin: 0 auto 24px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
-        <img src="./login.png" alt="CastNow ログイン画面" style="width: 100%; display: block;">
+        <img src="./login.png" alt="Buzzter ログイン画面" style="width: 100%; display: block;">
       </div>
       <h2 class="final-cta-title">
         さあ、動画の「手間」を抜いて<br>
@@ -1823,17 +1990,38 @@
     <!-- Footer -->
     <footer>
       <div class="footer-links">
-        <a href="https://castnow.jp/terms">利用規約</a>
-        <a href="https://castnow.jp/privacy">プライバシーポリシー</a>
-        <a href="https://castnow.jp/contact">お問い合わせ</a>
+        <a href="https://buzzter.jp/terms">利用規約</a>
+        <a href="https://buzzter.jp/privacy">プライバシーポリシー</a>
+        <a href="https://buzzter.jp/contact">お問い合わせ</a>
       </div>
-      <p>&copy; 2026 CastNow / ぽんスマート All Rights Reserved.</p>
+      <p>&copy; 2026 Buzzter / ぽんスマート All Rights Reserved.</p>
     </footer>
 
   </div>
 
   <!-- JavaScript -->
   <script>
+    // ----------------------------------
+    // お知らせバナー開閉制御
+    // ----------------------------------
+    const newsToggleBtn = document.getElementById('newsToggleBtn');
+    const newsContentBox = document.getElementById('newsContentBox');
+    
+    if (newsToggleBtn && newsContentBox) {
+      newsToggleBtn.addEventListener('click', () => {
+        const isActive = newsContentBox.classList.contains('active');
+        if (isActive) {
+          newsContentBox.classList.remove('active');
+          newsContentBox.style.maxHeight = null;
+          newsToggleBtn.textContent = '詳細を見る ▾';
+        } else {
+          newsContentBox.classList.add('active');
+          newsContentBox.style.maxHeight = newsContentBox.scrollHeight + 'px';
+          newsToggleBtn.textContent = '閉じる ▴';
+        }
+      });
+    }
+
     // ----------------------------------
     // FAQ アコーディオン制御
     // ----------------------------------
@@ -1902,7 +2090,7 @@
   <!-- ぽんちゃん AIチャットウィジェット -->
   <script
     src="https://ponwidget.netlify.app/widget.js"
-    data-site="castnow"
+    data-site="buzzter"
     data-line="https://lin.ee/XJiDvzD"
   ></script>
 </body>
